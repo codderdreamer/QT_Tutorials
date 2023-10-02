@@ -15,7 +15,13 @@ public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
 
+private slots:
+    void on_guessButton_clicked();
+    void on_startOverButton_clicked();
+
 private:
     Ui::Widget *ui;
+    int secret_number;
+    int guess_number;
 };
 #endif // WIDGET_H
